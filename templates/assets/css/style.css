@@ -1,5 +1,11 @@
 @font-face
 {
+font-family: futera;
+src: url(../fonts/futera/Futura/Futura.ttf) format('truetype');
+}
+
+@font-face
+{
 font-family: futeraBookOblique;
 src: url(../fonts/futera/Futura-Book/Futura-BookOblique.ttf) format('truetype');
 }
@@ -10,11 +16,43 @@ font-family: futeraBook;
 src: url(../fonts/futera/Futura-Book/Futura-Book.ttf) format('truetype');
 }
 
+@font-face
+{
+font-family: frutigerLight;
+src: url(../fonts/frutiger/Frutiger-45-Light/Frutiger-Light.ttf) format('truetype');
+}
+
+/************
+	General
+************/
 body{
 	background: #fff;
 	border-top: 9px solid #ecff7f;
 	margin:0;
 	padding:26px 0 0;
+}
+
+p{
+	font-family: frutigerLight;
+	font-size: 13px;
+}
+a {
+	color:#000;
+}
+a.active{
+	color:#34cdc1 !important;
+}
+
+a:hover{
+	color:#34cdc1;
+	text-decoration: none;
+}
+
+.strip-padding{
+	padding:0 !important;
+}
+.margin-bottom-50{
+	margin-bottom: 50px;
 }
 
 /***********
@@ -24,6 +62,7 @@ body{
 #page_header{
 	font-family: futeraBookOblique;
 	font-size:15px;
+	margin-bottom:100px;
 }
 
 #page_header div{
@@ -32,16 +71,6 @@ body{
 #page_header a{
 	font-family: futeraBook;
 	padding:0 9px;
-	color:#000;
-}
-
-#page_header a:hover{
-	color:#34cdc1;
-	text-decoration: none;
-}
-
-a.active{
-	color:#34cdc1 !important;
 }
 
 #main_logo{
@@ -50,4 +79,41 @@ a.active{
 
 #main_logo a{
 	padding:0;
+}
+
+/***********
+	Footer
+***********/
+#page_footer{
+	/* from content */
+	margin-top:50px; 
+
+}
+.dotted-spaced {
+    background-image: linear-gradient(to right, #333 20%, rgba(255, 255, 255, 0) 20%);
+    background-position: top;
+    background-size: 10px 2px;
+    background-repeat: repeat-x;
+
+    padding-top:20px;
+}
+
+/**********
+	About
+***********/
+#about .subject{
+	font-family: futera;
+	font-size: 22px;
+}
+#about p{
+	padding:20px 0;
+}
+#about ul.social-media-links{
+	list-style: none;
+	display: block;
+	padding:0;
+}
+#about ul.social-media-links > li{
+	display:inline-block;
+	padding:10px 15px;
 }
