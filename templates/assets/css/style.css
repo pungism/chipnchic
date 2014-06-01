@@ -41,6 +41,7 @@ body{
 p{
 	font-family: frutigerLight;
 	font-size: 13px;
+	color: #000;
 }
 p.text-futera{
 	font-family: futeraBook;
@@ -58,14 +59,24 @@ p.font-size-12{
 a {
 	color:#000;
 	outline: none;
+
+	-o-transition:color .2s ease-out, background .2s ease-in;
+	-ms-transition:color .2s ease-out, background .2s ease-in;
+	-moz-transition:color .2s ease-out, background .2s ease-in;
+	-webkit-transition:color .2s ease-out, background .2s ease-in;
+	transition:color .2s ease-out, background .2s ease-in;
 }
+a:hover, a:visited, a:link, a:active{
+	text-decoration: none;
+}
+
 a.active{
 	color:#34cdc1 !important;
 }
 
 a:hover{
 	color:#34cdc1;
-	text-decoration: none;
+	/*text-decoration: none;*/
 	outline: none;
 }
 
@@ -79,6 +90,7 @@ a:hover{
 .margin-bottom-10{
 	margin-bottom: 10px;
 }
+
 .margin-bottom-50{
 	margin-bottom: 50px;
 }
@@ -122,6 +134,10 @@ ul{
 }
 .dotted-spaced {
     background-image: linear-gradient(to right, #333 20%, rgba(255, 255, 255, 0) 20%);
+    background-image: -webkit-linear-gradient(right, #333 20%, rgba(255, 255, 255, 0) 20%);
+    background-image: -moz-linear-gradient(right, #333 20%, rgba(255, 255, 255, 0) 20%);
+    background-image: -ms-linear-gradient(right, #333 20%, rgba(255, 255, 255, 0) 20%);
+    background-image: -o-linear-gradient(right, #333 20%, rgba(255, 255, 255, 0) 20%);
     background-position: top;
     background-size: 10px 2px;
     background-repeat: repeat-x;
@@ -157,7 +173,9 @@ ul{
 	cursor: pointer;
 	max-height:316px;
 }
-
+#portfolio a:hover{
+	color: #000;
+}
 /* Select all first p elements in mix div*/
 #portfolio .mix p.font-size-15{
 	margin-bottom:2px;
@@ -171,18 +189,30 @@ ul{
 #portfolio .mix.personal img{
 	border-bottom: 10px solid #a3ec6e
 }
-
-#portfolio .mix img:hover:before {
-    background: rgba(30,30,30, 0.6);
-    -moz-transition: all .5s linear;
-    -webkit-transition: all .5s linear;
-    -ms-transition: all .5s linear;
-    -o-transition: all .5s linear;
-    transition: all .5s linear;
-    /*content:"anytext";*/
+/*
+.tint{
+	position: relative;  
+    float: left; 
 }
+.tint:before {  
+    content: "";  
+    display: block;  
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    background: none;  
+    -moz-transition: background 0.3s linear;  
+    -webkit-transition: background 0.3s linear;  
+    -o-transition: background 0.3s linear;  
+    transition: background 0.3s linear;  
+    }
+.tint:hover:before {  
+    background: rgba(236,255,127, 0.6);  
+} 
 
-
+*/
 ul.mix-filter{
 	display: block;
 	padding-bottom:20px;
@@ -200,3 +230,63 @@ ul.mix-filter > li.active a{
 	color:#34cdc1;
 }
 
+/****************
+	Project Page
+*****************/
+.project-title{
+	font-family: futera;
+	font-size: 22px;
+}
+.project-info > ul.line-list{
+	/*display: block;*/
+	margin:0;
+	/*display:table;*/
+	/*margin:0 auto;*/
+	padding: 0;
+}
+.project-info > ul.line-list li{
+	display: inline-block;
+	color:#34cdc1;
+}
+.project-info > ul.line-list li > p{
+	margin:0;
+}
+.project-title, .project-info{
+	padding:10px 0;
+}
+.project-details > div{
+	padding:30px 0;
+}
+
+.project-details > .project-description{
+	padding:0;
+}
+.project-page-footer{
+	margin-top:20px;
+}
+
+.project-page-footer a {
+	display:inline-block;
+	height: 32px;
+	width: 32px;
+	margin:0 6px; 
+}
+.project-page-footer a.footer-left{
+	background-image:url('../img/footer-left-arrow.png');
+}
+.project-page-footer a.footer-left:hover{
+	background-image:url('../img/footer-left-arrow-hover.png');
+}
+
+.project-page-footer a.footer-right{
+	background-image:url('../img/footer-right-arrow.png');
+}
+.project-page-footer a.footer-right:hover{
+	background-image:url('../img/footer-right-arrow-hover.png');
+}
+.project-page-footer a.footer-home{
+	background-image:url('../img/footer-home.png');
+}
+.project-page-footer a.footer-home:hover{
+	background-image:url('../img/footer-home-hover.png');
+}
