@@ -105,10 +105,11 @@ ul{
 #page_header{
 	font-family: futeraBookOblique;
 	font-size:15px;
+	margin-top:20px;
 	margin-bottom:100px;
 }
 
-#page_header div{
+#page_header div.header-element{
 	margin-top:20px;
 }
 #page_header a{
@@ -133,15 +134,16 @@ ul{
 
 }
 .dotted-spaced {
-    background-image: linear-gradient(to right, #333 20%, rgba(255, 255, 255, 0) 20%);
+/*    background-image: linear-gradient(to right, #333 20%, rgba(255, 255, 255, 0) 20%);
     background-image: -webkit-linear-gradient(right, #333 20%, rgba(255, 255, 255, 0) 20%);
     background-image: -moz-linear-gradient(right, #333 20%, rgba(255, 255, 255, 0) 20%);
     background-image: -ms-linear-gradient(right, #333 20%, rgba(255, 255, 255, 0) 20%);
     background-image: -o-linear-gradient(right, #333 20%, rgba(255, 255, 255, 0) 20%);
     background-position: top;
     background-size: 10px 2px;
-    background-repeat: repeat-x;
+    background-repeat: repeat-x;*/
 
+    border-top: dotted 2px #666;
     padding-top:20px;
 }
 
@@ -255,14 +257,11 @@ ul.mix-filter > li.active a{
 	padding:10px 0;
 }
 .project-details > div{
-	padding:30px 0;
+	padding-top:30px;
 }
 
-.project-details > .project-description{
-	padding:0;
-}
 .project-page-footer{
-	margin-top:20px;
+	margin-top:50px;
 }
 
 .project-page-footer a {
