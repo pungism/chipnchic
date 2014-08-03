@@ -289,3 +289,31 @@ ul.mix-filter > li.active a{
 .project-page-footer a.footer-home:hover{
 	background-image:url('../img/footer-home-hover.png');
 }
+
+/* Responsive Navbar */
+.navbar{
+	background-color: #ecff7f;
+	border-color: #ecff7f;
+}
+
+.navbar-toggle.custom-toggle{
+	float:left;
+	margin-right: 0;
+	/*margin-left:  15px;*/
+	background-color: #ecff7f;
+	border-color: #ecff7f;;
+}
+.navbar-toggle.custom-toggle:hover, .navbar-toggle:focus {
+	background-color: #ecff7f;
+	border-color: #ecff7f;;
+}
+.collapse.navbar-collapse{
+	background-color: #DDD;
+}
+.navbar{
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	z-index: 1030;
+	top:0px;
+}
