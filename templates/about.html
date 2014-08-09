@@ -15,15 +15,33 @@
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
 <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-<!-- END GLOBAL MANDATORY STYLES -->
-<!-- BEGIN THEME STYLES -->
 <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
-<!-- END THEME STYLES -->
+<link href="assets/css/responsive.css" rel="stylesheet" type="text/css"/>
 <link rel="shortcut icon" href="favicon.ico"/>
+<!-- END GLOBAL MANDATORY STYLES -->
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
 <body>
+
+<!-- BEGIN MOBILE NAVBAR -->
+<div class="row visible-xs mobile-navbar">
+	<div class="col-xs-12 mobile-navbar-links hide">
+		<ul class="list-inline">
+			<li><a href="index.html">WORKS</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+	  </ul>
+	</div>
+	<div class="col-xs-12 mobile-navbar-toggler">
+			<button id="mobile_navbar_toggler" type="button" class="btn">
+				<i class="fa fa-bars"></i>
+				<!-- <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span> -->
+		  	</button>
+	</div>
+</div>
+<!-- END MOBILE NAVBAR -->
 
 <!-- BEGIN PAGE HEADER -->
 <div id="page_header" class="container">
@@ -31,16 +49,16 @@
 		<div class="col-md-10 col-md-offset-1">
 			<div class="row">
 				<div class="col-md-4 col-sm-4 hidden-xs header-element">
-					<span class="text-justify">CHIP IS A DESIGNER<br>& ART DIRECTOR.</span>
+					<span class="text-justify">CHIP IS A GRAPHIC<br>DESIGNER.</span>
 					<!-- <p>CHIP IS A DESIGNER</p> -->
 					<!-- <p>& ART DIRECTOR.</p> -->
 				</div>
 				<div id="main_logo" class="col-md-4 col-sm-4 col-xs-12 header-element">
 					<a href="index.html">
-						<img src="assets/img/main_logo.jpg" alt="..." class="img-rounded center-block">
+						<img src="assets/img/main_logo.png" alt="..." class="img-rounded center-block">
 					</a>
 				</div>
-				<div class="col-xs-12 visible-xs text-center" style="font-size:13px;">CHIP IS A DESIGNER & ART DIRECTOR.</div>
+				<div class="col-xs-12 visible-xs text-center" style="font-size:13px;">CHIP IS A GRAPHIC DESIGNER.</div>
 				<div class="col-md-4 col-sm-4 hidden-xs text-right header-element">
 					<a href="index.html">WORKS</a>
 					<a href="about.html" class="active">ABOUT</a>
@@ -57,7 +75,7 @@
 		<div class="col-md-12 text-center subject">ABOUT</div>
 		
 		<!-- BEGIN ABOUT CONTENT -->
-		<div class="col-md-8 col-md-offset-2 margin-bottom-50">
+		<div id="about_description" class="col-md-8 col-md-offset-2">
 			<div class="row">
 				<div class="col-md-5 col-sm-12">
 					<img src="assets/img/about.png" alt="..." class="img-rounded img-responsive center-block">
@@ -73,7 +91,7 @@
 		<!-- END ABOUT CONTENT -->
 
 		<!-- BEGIN SOCIAL MEDIA LINKS -->
-		<div class="col-md-5 col-md-offset-4 col-sm-12 col-xs-12">
+		<div id="social_media_links" class="col-md-5 col-md-offset-4 col-sm-12 col-xs-12">
 			<div class="row">
 				<div class="col-md-4 col-sm-12 col-xs-12 text-center">
 					<p>Feel free to find me at: </p>
@@ -124,6 +142,14 @@
 <script src="assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
 <script src="assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
 <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/scripts/layout.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$( document ).ready(function() {
+	Layout.init();
+});
+
+</script>
 </body>
 <!-- END BODY -->
 </html>

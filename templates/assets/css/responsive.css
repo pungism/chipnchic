@@ -1,0 +1,36 @@
+/*****
+For Extra Small Devices
+*****/
+
+@media (max-width: 767px) { 
+	#page_header{
+		font-size:15px;
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+
+	/* About Page*/
+	#about_description{
+		margin-bottom: 0px;
+	}
+	
+	#about ul.social-media-links > li{
+		display:inline-block;
+		padding:0 15px;
+	}
+
+	/* Project Pages*/
+	.project-details > div{
+		padding-top:15px;
+	}
+
+	.project-page-footer{
+		margin-top:25px;
+	}
+
+	#page_footer{
+	/* from content */
+		margin-top:25px; 
+
+	}
+}

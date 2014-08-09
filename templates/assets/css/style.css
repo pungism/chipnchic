@@ -34,8 +34,8 @@ src: url(../fonts/MHeiHK/MHeiHK-Light.otf) format('opentype');
 body{
 	background: #fff;
 	border-top: 9px solid #ecff7f;
-	margin:0;
-	padding:26px 0 0;
+	/*margin:0;*/
+	/*padding:26px 0 0;*/
 }
 
 p{
@@ -154,9 +154,16 @@ ul{
 	font-family: futera;
 	font-size: 22px;
 }
+#about_description{
+	margin-bottom: 50px;
+}
 #about p{
 	padding:20px 0;
 }
+/*#social_media_links p{
+	padding:0;
+}
+*/
 #about ul.social-media-links{
 	display: block;
 	padding:0;
@@ -291,29 +298,33 @@ ul.mix-filter > li.active a{
 }
 
 /* Responsive Navbar */
-.navbar{
-	background-color: #ecff7f;
-	border-color: #ecff7f;
+.mobile-navbar{
+	top:0;
+	margin-top: -9px;
+}
+.mobile-navbar-links{
+	background-color: #E1E1E1;
+}
+.mobile-navbar  ul{
+	padding: 10px 15px 0 15px;
+	font-family: futeraBook;
+}
+.mobile-navbar  ul > li{
+	padding:0 10px;
 }
 
-.navbar-toggle.custom-toggle{
-	float:left;
-	margin-right: 0;
-	/*margin-left:  15px;*/
+.mobile-navbar-toggler{
 	background-color: #ecff7f;
-	border-color: #ecff7f;;
 }
-.navbar-toggle.custom-toggle:hover, .navbar-toggle:focus {
+.mobile-navbar-toggler> button{
+	position: relative;
+	float: left;
+	margin-left: 15px;
+	padding:0;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	border: 1px solid transparent;
+	border-radius: 4px;
 	background-color: #ecff7f;
-	border-color: #ecff7f;;
-}
-.collapse.navbar-collapse{
-	background-color: #DDD;
-}
-.navbar{
-	position: absolute;
-	right: 0px;
-	left: 0px;
-	z-index: 1030;
-	top:0px;
+	font-size: 18px;
 }
