@@ -6,7 +6,7 @@ For Extra Small Devices
 	#page_header{
 		font-size:15px;
 		margin-top:20px;
-		margin-bottom:20px;
+		margin-bottom:30px;
 	}
 
 	/* About Page*/
@@ -29,14 +29,12 @@ For Extra Small Devices
 	}
 
 	#page_footer{
-	/* from content */
 		margin-top:25px; 
-
 	}
 }
 
 /*
- Handle Vimeo
+  Vimeo
 */
 @media (max-width: 360px) { 
 	.vimeo{
@@ -49,5 +47,31 @@ For Extra Small Devices
 	.vimeo{
 		width: 100%;
 		height:400px;
+	}
+}
+
+/*
+ MixItUp
+*/
+
+/* fixes awkward spaces when project title gets too long*/
+@media (min-width: 991px) and (max-width: 1200px) { 
+	#portfolio .mix {
+		min-height:300px;
+	}
+}
+
+@media (max-width: 500px) { 
+	ul.mix-filter > li a {
+		font-size: 12px;
+	}
+	#mix_filters_container{
+		padding: 0;
+	}
+}
+
+@media (max-width: 327px) { 
+	#page_content{
+		padding: 0;
 	}
 }
