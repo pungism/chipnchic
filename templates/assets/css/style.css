@@ -245,6 +245,7 @@ ul.mix-filter > li.active a{
 .project-title{
 	font-family: futera;
 	font-size: 22px;
+	text-transform: uppercase;
 }
 .project-info > ul.line-list{
 	/*display: block;*/
@@ -296,6 +297,12 @@ ul.mix-filter > li.active a{
 .project-page-footer a.footer-home:hover{
 	background-image:url('../img/footer-home-hover.png');
 }
+.vimeo{
+	height:440px;
+	width:780px;
+	border:0;	
+}
+
 
 /* Responsive Navbar */
 .mobile-navbar{
@@ -304,6 +311,7 @@ ul.mix-filter > li.active a{
 }
 .mobile-navbar-links{
 	background-color: #E1E1E1;
+	display:none;
 }
 .mobile-navbar  ul{
 	padding: 10px 15px 0 15px;

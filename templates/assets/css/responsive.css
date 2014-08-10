@@ -34,3 +34,20 @@ For Extra Small Devices
 
 	}
 }
+
+/*
+ Handle Vimeo
+*/
+@media (max-width: 360px) { 
+	.vimeo{
+		width: 100%;
+		height:200px;
+	}
+}
+
+@media (min-width: 361px) and (max-width: 991px) { 
+	.vimeo{
+		width: 100%;
+		height:400px;
+	}
+}

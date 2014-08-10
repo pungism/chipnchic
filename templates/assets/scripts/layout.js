@@ -1,7 +1,14 @@
 var Layout = function(){
 	var handleMobileNavbar = function(){
 		$('#mobile_navbar_toggler').click(function(){
-			$('.mobile-navbar-links').toggleClass('hide');
+			var $navbarLinks = $('.mobile-navbar-links');
+
+			if ($navbarLinks.is( ":hidden" )){
+				$navbarLinks.slideDown();	
+			}else {
+				$navbarLinks.slideUp();
+				}
+
 		});
 	}
 	return{
