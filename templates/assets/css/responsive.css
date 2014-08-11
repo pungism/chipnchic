@@ -85,3 +85,12 @@ For Extra Small Devices
 		padding: 0;
 	}
 }
+
+@media(min-width: 360px) and (max-width: 992px){
+	.portfolio-link{
+	width: 300px;
+	}
+	.portfolio-link  p{
+		width: 300px;
+	}
+}
